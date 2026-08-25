@@ -1,0 +1,61 @@
+.igbc {
+  padding: clamp(72px, 11vw, 150px) 0;
+  border-top: 1px solid var(--line);
+  background: radial-gradient(ellipse at 15% 15%, rgba(94, 111, 82, 0.08), transparent 55%), var(--bg);
+}
+
+.igbc__inner {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 48px;
+  align-items: center;
+}
+
+.igbc__badge-wrap {
+  display: flex;
+  justify-content: center;
+}
+
+.igbc__badge {
+  width: min(280px, 60vw);
+  aspect-ratio: 1;
+}
+
+.eyebrow--sage {
+  color: var(--sage);
+}
+
+.eyebrow--sage::before {
+  background: var(--sage);
+}
+
+.igbc__title {
+  margin-top: 20px;
+  font-size: clamp(28px, 4vw, 44px);
+  max-width: 14ch;
+}
+
+.igbc__body {
+  margin-top: 22px;
+  max-width: 50ch;
+  font-size: 16px;
+  line-height: 1.8;
+  color: var(--ink-dim);
+  font-weight: 400;
+}
+
+.btn--sage {
+  margin-top: 34px;
+}
+
+.btn--sage:hover {
+  border-color: var(--sage);
+  color: var(--sage);
+}
+
+@media (min-width: 860px) {
+  .igbc__inner {
+    grid-template-columns: 0.8fr 1fr;
+    gap: 80px;
+  }
+}

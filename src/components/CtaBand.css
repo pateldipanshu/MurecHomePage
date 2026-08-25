@@ -1,0 +1,45 @@
+.cta {
+  padding: clamp(90px, 14vw, 190px) 0;
+  border-top: 1px solid var(--line-on-dark);
+  text-align: center;
+  position: relative;
+  background:
+    radial-gradient(ellipse at 50% 0%, rgba(168, 57, 31, 0.16), transparent 60%),
+    var(--dark-bg);
+  color: var(--ink-on-dark);
+}
+
+.cta__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cta__title {
+  font-size: clamp(36px, 6vw, 76px);
+  color: var(--ink-on-dark);
+}
+
+.cta__body {
+  margin-top: 20px;
+  max-width: 42ch;
+}
+
+.cta__body p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--ink-on-dark-dim);
+  font-weight: 400;
+}
+
+.cta .btn-solid {
+  margin-top: 40px;
+  background: var(--gold-deep);
+  border-color: var(--gold-deep);
+  color: #fff;
+}
+
+.cta .btn-solid:hover {
+  background: var(--gold);
+  border-color: var(--gold);
+}
